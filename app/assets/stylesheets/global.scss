@@ -1,0 +1,46 @@
+.homepage {
+  padding-top: 50px;
+  .main {
+    background: #f7f7f7;
+    height: calc(var(--vh, 1vh) * 100 - 50px);
+    padding: 0 40px;
+    .page-header {
+      color: #212121;
+      border: 0;
+      margin: 78px 0 24px;
+      font-size: 22px;
+    }
+  }
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(254, 254, 254, 0.3);
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+
+.loaded {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: asset_url('loading.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: cover;
+  background-size: cover;
+  margin: -20px 0 0 -20px;
+}
+
+.culmn {
+  width: 100%;
+  overflow: hidden;
+}

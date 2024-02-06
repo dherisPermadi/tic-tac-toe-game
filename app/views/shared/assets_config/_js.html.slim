@@ -1,0 +1,4 @@
+- if asset_exists? "#{controller_name}/mixins.js"
+  = javascript_include_tag "#{controller_name}/mixins", 'data-turbolinks-track': 'reload'
+- if asset_exists? "#{controller_name}/#{action_name}.js"
+  = javascript_include_tag "#{controller_name}/#{action_name}", 'data-turbolinks-track': 'reload'
